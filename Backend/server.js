@@ -34,7 +34,7 @@ app.use(express.json());
 app.use(
   cors({
     origin: [
-      "https://event-ticket-system-tan.vercel.app",
+      "https://event-ticketing-system-beige.vercel.app",
       "http://localhost:5173",
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
