@@ -43,6 +43,16 @@ app.use(
   })
 );
 
+
+app.get("/", (req, res) => {
+  res.json({
+    message: "Backend server is running successfully!",
+    status: "active",
+    timestamp: new Date().toISOString()
+  });
+});
+
+
 // Serve static files from uploads directory
 app.use('/uploads', express.static('uploads'));
 
